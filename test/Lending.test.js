@@ -24,7 +24,7 @@ contract('Micro lending', (accounts) => {
         assert.equal(loan.amount.toString(), amount);
         assert.equal(loan.interestRate.toString(), interestRate());
         assert.equal(loan.dueDate > 0, true);
-        assert.equal(loan.reapaid, false);
+        assert.equal(loan.repaid, false);
     })
 
     it("Should allow owner to repay a loan", async () => {
